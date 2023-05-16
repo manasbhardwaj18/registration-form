@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+  margin: 0
+  
+ }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #9b415c;
+
+}
+
+h1 {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 20px 0;
+  text-align: center;
+  
+}
+
+.registartion-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  color: #bedf45;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #6f2f42;
+  padding: 20px;
+}
+
+.registartion-form input
+{
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+.registartion-form select
+{
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(228, 228, 228), 0 0 10px rgb(224, 224, 224);
+}
+
+.registartion-form .submit {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: 'Mynerve', cursive;
+}
+
+.registartion-form .submit:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}

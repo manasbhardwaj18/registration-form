@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="Stylesheet" href="des.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Registration form with Validation</title>
+</head>
+
+<body>
+  
+  <div class="container">
+    <h1>Registration form with Validation</h1>
+    <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+      <table>
+        <caption>Details</caption>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" name="name" id="name" placeholder="Your Name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="text" name="email" id="email" placeholder="Your email"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" name="password" id="password"></td>
+        </tr>
+        <tr>
+          <td><label for="phoneNumber">Phone Number:</label></td>
+          <td><input type="number" name="phoneNumber" id="phoneNumber" placeholder="0"></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            Male: <input type="radio" name="gender" value="male">
+            Female: <input type="radio" name="gender" value="female">
+            Other: <input type="radio" name="gender" value="other">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="language">Language</label></td>
+          <td>
+            <select name="language" id="language">
+              <option value="">Select language</option>
+              <option value="English">English</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Arabic">Arabic</option>
+              <option value="Russian">Russian</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+            <td><label for="nationality">Nationality</label></td>
+            <td>
+              <select name="nationality" id="nationality">
+                <option value="">Select Country</option>
+                <option value="England">England</option>
+                <option value="Spain">Spain</option>
+                <option value="India">India</option>
+                <option value="Israel">Israel</option>
+                <option value="Russia">Russia</option>
+                <option value="USA">USA</option>
+              </select>
+            </td>
+          </tr>
+        <tr>
+          <td><label for="zipcode">Zip Code:</label></td>
+          <td><input type="number" name="zipcode" id="zipcode"></td>
+        </tr>
+        <tr>
+          <td><label for="about">About:</label></td>
+          <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" class="submit" value="Register" ></td>
+        </tr>
+      </table>
+   </form>
+  </div>
+</body>
+<script src="./func.js"></script>
+
+</html>
